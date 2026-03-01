@@ -1,0 +1,21 @@
+var a = 10
+a++  // post increement
+console.log(a)  //prints 11
+
+var b=10
+++b // pre increement
+console.log(b) //prints 11
+
+var a=10
+b=a++
+console.log(b) //prints 10
+
+var a =10
+b=a++
+console.log(a) //prints 11
+
+var a =10
+b=++a
+console.log(a) //prints 11
+
+

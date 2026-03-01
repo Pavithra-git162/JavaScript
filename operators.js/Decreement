@@ -1,0 +1,7 @@
+var c=10
+c-- // post decreement
+console.log(c) 
+
+var d=10
+--d // pre decreement
+console.log(d)

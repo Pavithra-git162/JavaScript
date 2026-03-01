@@ -1,0 +1,6 @@
+const a=10 //const is used to declare a constant variable 
+console.log(a) //prints 10
+
+/*a=20
+console.log(a) //TypeError: Assignment to constant variable.
+*/

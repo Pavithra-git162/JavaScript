@@ -1,0 +1,105 @@
+<p id="one">
+    Hello
+</p>
+
+<script>
+    var para=document.getElementById("one") // dom manipulation
+    console.log(para.textContent) 
+    para.textContent="Hi"               
+    
+    
+
+
+</script>
+
+//Exercise
+<h1 id="title">   
+    Hello World
+
+</h1>
+<button onclick="change()" >Change</button> //event handling 
+
+<script> 
+    var head1=document.getElementById("title") 
+    console.log(head1.textContent)
+    
+
+    function change(){
+        head1.textContent="Bye World"
+
+    }
+
+</script>
+
+//Exercise
+<input id="num1">
+<input id="num2">
+<button onclick="add()">Add</button>
+<p id="result">Result</p>
+<script>
+    var box1=document.getElementById("num1")    
+    var box2=document.getElementById("num2")
+    var res=document.getElementById("result")
+
+
+    function add(){
+        var box1value=Number(box1.value)
+        var box2value=Number(box2.value)
+        var total = box1value+box2value
+        res.textContent=total 
+    }
+
+
+</script>
+
+//Exercise -style
+<style>
+    div{
+        background-color: black;
+        width:100px;
+        height:100px;
+        transition:2s;
+    }
+
+</style>
+<div id="box"></div>
+
+<button onclick="change()">change color</button>
+<script>
+    var box=document.getElementById("box")
+    function change(){
+        box.style.backgroundColor="pink"
+
+    }
+
+</script>
+
+//style-2
+<style>
+    div{
+        background-color: black;
+        width:100px;
+        height:100px;
+        transition:2s;
+    }
+    .widthmax{
+        width:900px;
+    }
+
+</style>
+<div id="box"></div>
+
+<button onclick="change()">change color</button>
+<script>
+    var box=document.getElementById("box")
+    function change(){
+        box.setAttribute("class","widthmax") 
+
+    }
+
+</script>
+
+
+
+
+

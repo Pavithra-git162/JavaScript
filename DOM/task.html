@@ -1,0 +1,64 @@
+//Task-1
+
+<input id="inputBox" onkeyup="change()">
+
+<h1 id="result"></h1>
+<script>
+    var input=document.getElementById("inputBox")
+    var result=document.getElementById("result")
+    function change(){
+        result.textContent=input.value
+
+    }
+</script>
+
+//Task-2
+<button onclick="add()">Add</button>
+<div id="result"></div>
+<script>
+    var div=document.getElementById("result")
+    function add(){
+        var item=document.createElement("h1") //<h1></h1>
+        item.textContent="Hello" //<h1>Hello</h1>
+        div.append(item) //<div><h1>Hello</h1></div>
+    }
+
+</script>
+
+//Task-3
+<button id="btn" onclick="change()">change color</button>
+<script>
+    var btn=document.getElementById("btn")
+    function change(){
+        btn.style.backgroundColor="red"
+
+    }
+
+</script>
+
+//Task-4
+<h1 id="name">Name</h1>
+<button  onclick="change(event)">John</button> 
+<button  onclick="change(event)">Hari</button>
+<button  onclick="change(event)">Praveen</button>
+
+<script>
+    
+    var heading=document.getElementById("name")
+    function change(event){  //used when same function is used for multiple buttons
+        heading.textContent=event.target.textContent 
+        
+
+    }
+
+</script>
+
+//Task-5
+<h1 onclick="deleteitem(event)">One</h1> //to delete the element 
+<h1 onclick="deleteitem(event)">Two</h1>
+<h1 onclick="deleteitem(event)">Three</h1>
+<script>
+    function deleteitem(event){ 
+        event.target.remove()
+    }
+</script>
